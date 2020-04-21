@@ -85,7 +85,8 @@ public class BoletoControllerTest {
 
     @Test
     public void testDeleteBoleto() {
-
+         Mockito.when(boletoDao.delete(1))
+        assertThat(boletoDao.findAll(), Matchers.equalTo(boletos));
         
     }
 
